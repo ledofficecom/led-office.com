@@ -18,7 +18,8 @@
 		<div class="container">
 			<!-- BRAND LOGO -->
 			<a class="navbar-brand" id="navbar-brand" href="/">
-				<img src="assets/images/logo.png" style="width: 66px;" alt="logo led office" />
+				<!-- <img src="assets/images/logo.png" style="width: 66px;" alt="logo led office" /> -->
+				<img src="/brand/logo-white.svg" class="w-[140px]" alt="Logo led office" />
 			</a>
 
 			<!-- BEGIN TOGGLER/COLLAPSIBE BUTTON -->
@@ -62,7 +63,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-4">
 					<div class="logo">
-						<img src="/assets/images/logo.png" alt="Logo" />
+						<img src="/brand/logo-white.svg" class="w-[140px]" alt="Logo" />
 					</div>
 					<p class="footer-description footer-text-style my-3">
 						This website is for health information and advice about coronavirus (COVID-19), how to
