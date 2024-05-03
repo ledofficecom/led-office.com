@@ -41,5 +41,5 @@ export const MENU = [
 export const SOCIAL = {
     INSTAGRAM: 'https://www.instagram.com/led_office_',
     FACEBOOK: 'https://www.facebook.com/profile.php?id=100087568515362',
-    WHATSAPP: 'https://wa.me/+53502043006',
+    WHATSAPP: 'https://wa.me/+573502043006',
 }

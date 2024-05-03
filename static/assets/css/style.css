@@ -908,7 +908,7 @@ body{
   padding: 60px 0;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(rgb(7 12 31),rgba(7, 12, 31, 0.85)), url(../images/top-bg.png);
+  background-image: linear-gradient(rgb(7 12 31),rgba(7, 12, 31, 0.85)), url(../images/banner_animated.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;

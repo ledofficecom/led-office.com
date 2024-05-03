@@ -1,4 +1,18 @@
-<!-- BEGIN ABOUT SECTION -->
+<section id="header-top" class="header-top-bg">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="home-content text-center">
+					<h1>Sobre nosotros</h1>
+					<ul class="breadcrumb breadcrumb-style justify-content-center">
+						<li class="breadcrumb-item"><a href="/">Inicio</a></li>
+						<li class="breadcrumb-item active">Nosotros</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="about" class="about-bg">
 	<div class="container">
 		<div class="row align-items-center">
