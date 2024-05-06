@@ -6,7 +6,7 @@
 		<div class="row align-items-center">
 			<div class="col-sm-12 col-md-12 col-lg-6">
 				<div class="home-content text-md-left text-center">
-					<h1>Iluminación brillante para hogar y arquitectura</h1>
+					<h1>Iluminación LED para tus proyectos</h1>
 					<p>Enciende tu inspiración con LED Office</p>
 					<a href="/store" id="fill-btn" class="home-btn">Ver productos</a>
 				</div>
