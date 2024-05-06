@@ -74,7 +74,6 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "dependencies": {
-    "@sveltejs/adapter-cloudflare": "^4.2.0",
-    "@sveltejs/adapter-netlify": "^4.2.0"
+    "@sveltejs/adapter-cloudflare": "^4.2.0"
   }
 }
