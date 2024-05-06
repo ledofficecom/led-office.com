@@ -43,3 +43,10 @@ export const SOCIAL = {
     FACEBOOK: 'https://www.facebook.com/profile.php?id=100087568515362',
     WHATSAPP: 'https://wa.me/+573502043006',
 }
+
+export const DATA_SEO = {
+    DOMAIN: 'https://led-office.com/',
+    APP_NAME: 'Led Office',
+    IMAGE: 'brand/banner.png',
+    KEYWORDS:'Iluminación Led, Iluminación, Led, Iluminación para hogar, Iluminación para proyectos arquitectónicos, Iluminación para oficinas, Iluminación para locales comerciales'
+}

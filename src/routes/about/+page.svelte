@@ -1,3 +1,10 @@
+<script>
+
+	import Seo from "$lib/components/SEO.svelte";
+
+</script>
+
+<Seo URL='/about' TITLE="Sobre nosotros" DESCRIPTION="Descubre quienes somos" />
 <section id="header-top" class="header-top-bg">
 	<div class="container">
 		<div class="row align-items-center">

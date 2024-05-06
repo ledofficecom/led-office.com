@@ -1,4 +1,5 @@
 <script>
+	import Seo from '$lib/components/SEO.svelte';
 	import { SOCIAL } from '$lib/const/INFO';
 	// import { PRODUCTS } from '$lib/const/PRODUCTS';
 	import { onMount } from 'svelte';
@@ -16,7 +17,7 @@
 		}
 	}
 </script>
-
+<Seo URL='/store' TITLE="Nuestra tienda" DESCRIPTION="Bienvenido a nuestra tienda en línea. Aquí encontrarás una amplia selección de productos de iluminación LED para diferentes aplicaciones. Explora nuestras categorías y encuentra la solución perfecta para tus necesidades de iluminación." />
 <section id="header-top" class="header-top-bg">
 	<div class="container">
 		<div class="row align-items-center">

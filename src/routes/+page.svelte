@@ -1,6 +1,8 @@
 <script lang="ts">
-</script>
+	import Seo from "$lib/components/SEO.svelte";
 
+</script>
+<Seo URL='/' TITLE="Inicio" DESCRIPTION="Página de inicio Led Office" />
 <section id="home" class="home-bg">
 	<div class="container">
 		<div class="row align-items-center">

@@ -1,3 +1,10 @@
+<script>
+
+	import Seo from "$lib/components/SEO.svelte";
+
+</script>
+
+<Seo URL='/contact' TITLE="Contáctanos" DESCRIPTION="Esta es la página de contacto" />
 <section id="header-top" class="header-top-bg">
 	<div class="container">
 		<div class="row align-items-center">
