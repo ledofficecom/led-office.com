@@ -8,7 +8,13 @@
 	onMount(() => {
 		PRODUCTS = data.products;
 	});
-	
+	function filterByCategory( category ){
+		if( category === 'todas' ){
+			PRODUCTS = data.products;
+		}else{
+			PRODUCTS = data.products.filter( item => item.category === category );
+		}
+	}
 </script>
 
 <section id="header-top" class="header-top-bg">
@@ -29,7 +35,25 @@
 
 <section id="news-feed" class="news-feed-bg news-grid-bg">
 	<div class="container">
+		
 		<div class="row justify-content-center">
+			<h1 class="text-white font-bold mb-3 text-2xl">Categorías</h1>
+			<div class="col-sm-12 flex justify-center mb-7">
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<!-- svelte-ignore a11y-no-static-element-interactions -->
+				<div class="category">
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('todas')}>todas</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Cintas Led')}>Cintas Led</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Modulos Led')}>Modulos Led</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Fuentes de poder')}>Fuentes de poder</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Perfiles cinta led')}>Perfiles cinta led</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('hogar')}>hogar</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Cables')}>Cables</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('conectores')}>conectores</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('controladores')}>controladores</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('sensores')}>sensores</span>
+				</div>
+			</div>
 			{#each PRODUCTS as item}
 				<div class="col-sm-12 col-md-4 col-lg-3">
 					<div class="news-feed-main">
@@ -40,7 +64,7 @@
 								<img src={item.image} alt="01-news-feed" />
 							</div>
 							<div class="category">
-								<span class="badge">Nuevo</span>
+								<span class="badge uppercase">{item.category}</span>
 							</div>
 							<h3>{item.name}</h3>
 							<h4 class="mb-5 text-white">{item.description}</h4>
