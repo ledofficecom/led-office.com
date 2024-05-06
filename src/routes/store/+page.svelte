@@ -1,6 +1,14 @@
 <script>
 	import { SOCIAL } from '$lib/const/INFO';
-	import { PRODUCTS } from '$lib/const/PRODUCTS';
+	// import { PRODUCTS } from '$lib/const/PRODUCTS';
+	import { onMount } from 'svelte';
+
+	let PRODUCTS = []
+	export let data;
+	onMount(() => {
+		PRODUCTS = data.products;
+	});
+	
 </script>
 
 <section id="header-top" class="header-top-bg">

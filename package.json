@@ -74,6 +74,7 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
     "@sveltejs/adapter-cloudflare": "^4.2.0",
     "@sveltejs/adapter-netlify": "^4.2.0"
   }
