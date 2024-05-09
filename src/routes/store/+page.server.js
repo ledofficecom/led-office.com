@@ -19,6 +19,5 @@ export const load = async ({ }) => {
         info_products = data;
     });
     // }
-    console.log("data", info_products);
     return { info_products }
 }
