@@ -93,7 +93,7 @@
 								<span class="badge uppercase">{item.category}</span>
 							</div>
 							<h3>{item.name}</h3>
-							<h4 class="mb-5 text-sm text-white">{item.description}</h4>
+							<h4 class="mb-5 text-sm text-white">{item.description ? item.description : ''}</h4>
 							<a
 								target="_blank"
 								href={SOCIAL.WHATSAPP + '?text=Hola estoy interesado en ' + item.name}
