@@ -34,15 +34,28 @@
 				referrerpolicy="no-referrer-when-downgrade"
 			></iframe>
 		</div>
-		<div class="row align-items-center mt-5">
-			<div class="col-sm-12 col-md-12 col-lg-12">
-				<div class="content-main cta-area-inner-bg mt-0 p-5 text-center">
-					
-					
-					
+		<section id="cta-area" class="cta-area-bg">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="content-main cta-area-inner-bg mt-0 p-5 text-center">
+							<div class="content-top text-center">
+								<h2 class="mt-0">¿Tienes alguna inquietud?</h2>
+							</div>
+							<div class="content-bottom content-bottom-width text-center">
+								
+								<p>
+									Recuerda usar todos nuestros canales de atención de cliente para resolver tus dudas
+								</p>
+							</div>
+							<a href="/contact" id="outline-btn" class="home-btn outline-btn mr-sm-4 mr-md-4"
+								>Contacto</a
+							>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 </section>
 <!-- end section #cta-area -->
