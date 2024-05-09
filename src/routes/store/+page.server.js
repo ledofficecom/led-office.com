@@ -5,18 +5,20 @@ export const prerender = 'auto'
 export const load = async ({ }) => {
 
     /** @type {string | any[]}*/
-    let products = []
+    let info_products = []
 
-    productsStore.subscribe((data) => {
-        products = data;
+    // productsStore.subscribe((data) => {
+    //     products = data;
+    // });
+
+    // if (products.length == 0) {
+    await getDataFromNotion().then((data) => {
+        // @ts-ignore
+        productsStore.set(data);
+        // @ts-ignore
+        info_products = data;
     });
-
-    if (products.length == 0) {
-        await getDataFromNotion().then((data) => {
-            // @ts-ignore
-            productsStore.set(data);
-            products = data;
-        });
-    }
-    return {products}
+    // }
+    console.log("data", info_products);
+    return { info_products }
 }

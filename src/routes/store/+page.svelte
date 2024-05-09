@@ -4,16 +4,25 @@
 	// import { PRODUCTS } from '$lib/const/PRODUCTS';
 	import { onMount } from 'svelte';
 
+	/**
+	 * @type {any[]}
+	 */
 	let PRODUCTS = []
+	let CATEGORIES = []
 	export let data;
 	onMount(() => {
-		PRODUCTS = data.products;
+		console.log(data.info_products);
+		CATEGORIES = data.info_products.categories;
+		PRODUCTS = data.info_products.services;
 	});
+	/**
+	 * @param {string} category
+	 */
 	function filterByCategory( category ){
 		if( category === 'todas' ){
-			PRODUCTS = data.products;
+			PRODUCTS = data.info_products.services;
 		}else{
-			PRODUCTS = data.products.filter( item => item.category === category );
+			PRODUCTS = data.info_products.services.filter( (/** @type {{ category: any; }} */ item) => item.category === category );
 		}
 	}
 </script>
@@ -44,7 +53,10 @@
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
 				<div class="category">
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('todas')}>todas</span>
-					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Cintas Led')}>Cintas Led</span>
+					{#each CATEGORIES as CATEGORY}
+						<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory(CATEGORY)}>{CATEGORY}</span>
+					{/each}
+					<!-- <span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Cintas Led')}>Cintas Led</span>
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Modulos Led')}>Modulos Led</span>
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Fuentes de poder')}>Fuentes de poder</span>
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Perfiles cinta led')}>Perfiles cinta led</span>
@@ -52,7 +64,7 @@
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('Cables')}>Cables</span>
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('conectores')}>conectores</span>
 					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('controladores')}>controladores</span>
-					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('sensores')}>sensores</span>
+					<span class="badge uppercase cursor-pointer" on:click={ ()=> filterByCategory('sensores')}>sensores</span> -->
 				</div>
 			</div>
 			{#each PRODUCTS as item}
