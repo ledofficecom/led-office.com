@@ -1,10 +1,8 @@
 <script>
-
-	import Seo from "$lib/components/SEO.svelte";
-
+	import Seo from '$lib/components/SEO.svelte';
 </script>
 
-<Seo URL='/contact' TITLE="Contáctanos" DESCRIPTION="Esta es la página de contacto" />
+<Seo URL="/contact" TITLE="Contáctanos" DESCRIPTION="Esta es la página de contacto" />
 <section id="header-top" class="header-top-bg">
 	<div class="container">
 		<div class="row align-items-center">
@@ -43,14 +41,27 @@
 								<h2 class="mt-0">¿Tienes alguna inquietud?</h2>
 							</div>
 							<div class="content-bottom content-bottom-width text-center">
-								
-								<p>
-									Recuerda usar todos nuestros canales de atención de cliente para resolver tus dudas
-								</p>
+								<section id="news-fseed" class="sidebar-page-container">
+									<div class="row justify-content-center">
+										<div class="col-lg-6">
+											<div class="sidebar">
+												<div class="sidebar-search">
+													<div class="widget-content search-form">
+														<form action="https://formspree.io/f/moqgbqyk" method="post">
+															<div class="form-group">
+																<input type="search" name="name" class="mb-3" placeholder="Nombre" />
+																<input type="search" name="phone" class="mb-3" placeholder="Teléfono" />
+																<input type="search" name="message" class="mb-3" placeholder="Mensaje" />
+															</div>
+															<button type="submit" class="home-btn outline-btn mr-sm-4 mr-md-4"> Enviar </button>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
 							</div>
-							<a href="/contact" id="outline-btn" class="home-btn outline-btn mr-sm-4 mr-md-4"
-								>Contacto</a
-							>
 						</div>
 					</div>
 				</div>
