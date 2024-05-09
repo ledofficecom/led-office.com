@@ -12,7 +12,8 @@
 		}
 	});
 </script>
-<ButtonWhatsApp/>
+
+<ButtonWhatsApp />
 <header id="header">
 	<!-- BEGIN NAV -->
 	<div class="navbar header-nav navbar-dark navbar-expand-lg" id="navbar">
@@ -48,8 +49,28 @@
 						</li>
 					{/each}
 				</ul>
-				<a class="btn-nav btn-bg text-decoration-none" id="btn-bg-nav" target="_blank" href={SOCIAL.WHATSAPP}
-					><i class="fa fa-phone"></i>{INFO_COMPANY.PHONE}</a
+				<ul class="navbar-nav nav mx-auto" id="navbar">
+					<li class="nav-item link-social-icons link-footer" id="link-footer">
+						<a target="_blank" class="nav-link light-text mr-2 p-0 px-0" href={SOCIAL.FACEBOOK}
+							><i class="fa fa-facebook"></i></a
+						>
+					</li>
+					<li class="nav-item link-social-icons link-footer" id="link-footer">
+						<a target="_blank" class="nav-link light-text mx-2 p-0 px-0" href={SOCIAL.WHATSAPP}
+							><i class="fa fa-whatsapp"></i></a
+						>
+					</li>
+					<li class="nav-item link-social-icons link-footer" id="link-footer">
+						<a target="_blank" class="nav-link light-text mx-2 p-0 px-0" href={SOCIAL.INSTAGRAM}
+							><i class="fa fa-instagram"></i></a
+						>
+					</li>
+				</ul>
+				<a
+					class="btn-nav btn-bg text-decoration-none"
+					id="btn-bg-nav"
+					target="_blank"
+					href={SOCIAL.WHATSAPP}><i class="fa fa-phone"></i>{INFO_COMPANY.PHONE}</a
 				>
 			</div>
 			<!-- END NAVBAR LINKS -->
@@ -115,7 +136,6 @@
 					<p class="text-small footer-text-style py-lg-4 m-0 pt-4">
 						©Copyright {INFO_COMPANY.APP_NAME} Todos los derechos reservados.
 					</p>
-					
 				</div>
 			</div>
 		</div>
