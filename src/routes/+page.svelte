@@ -3,7 +3,8 @@
 
 </script>
 <Seo URL='/' TITLE="Inicio" DESCRIPTION="Página de inicio Led Office" />
-<section id="home" class="home-bg">
+<section id="home" class="home-bg h-[120vh] bg-[#020B2C] relative">
+	<img src="/assets/images/banner.png" class="absolute w-full bottom-0" alt="banner">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-sm-12 col-md-12 col-lg-6">

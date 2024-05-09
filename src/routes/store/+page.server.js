@@ -1,6 +1,7 @@
 //+page.server.js
 import { getDataFromNotion } from "$lib/helpers/helper";
 import productsStore from "$lib/store/productsStore";
+export const prerender = 'auto'
 export const load = async ({ }) => {
 
     /** @type {string | any[]}*/

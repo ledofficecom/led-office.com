@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import './global.css';
 	import './tailwind.css';
+	import ButtonWhatsApp from '$lib/components/ButtonWhatsApp.svelte';
 
 	let isMobile = false;
 	onMount(() => {
@@ -11,7 +12,7 @@
 		}
 	});
 </script>
-
+<ButtonWhatsApp/>
 <header id="header">
 	<!-- BEGIN NAV -->
 	<div class="navbar header-nav navbar-dark navbar-expand-lg" id="navbar">
