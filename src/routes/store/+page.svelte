@@ -3,6 +3,7 @@
 	import { SOCIAL } from '$lib/const/INFO';
 	// import { PRODUCTS } from '$lib/const/PRODUCTS';
 	import { onMount } from 'svelte';
+	import { fly } from 'svelte/transition';
 
 	/**
 	 * @type {any[]}
@@ -68,7 +69,7 @@
 				</div>
 			</div>
 			{#each PRODUCTS as item}
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-sm-12 col-md-4 col-lg-3" transition:fly={{ duration: 300,  y: 500, opacity: 0.5 }}>
 					<div class="news-feed-main">
 						<div class="new-feed-content">
 							<div class="post-image-area">
