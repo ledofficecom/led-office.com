@@ -87,7 +87,7 @@
 						<div class="new-feed-content">
 							<div class="post-image-area">
 								<div class="post-date"></div>
-								<img src={item.image} alt="01-news-feed" />
+								<img src={item.image} alt="01-news-feed h-[260px] object-cover" style="height: 260px; object-fit: cover;" />
 							</div>
 							<div class="category">
 								<span class="badge uppercase">{item.category}</span>
