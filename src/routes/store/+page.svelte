@@ -45,7 +45,6 @@
 	let paginator = [];
 	let total_results = 16;
 
-
 	// Función para generar la lista de números de página visibles
 	function generateVisiblePages() {
 		const totalPages = TOTAL_PAGES;
@@ -119,8 +118,6 @@
 		return PRODUCTS.slice(startIndex, endIndex);
 	}
 
-
-
 	onMount(() => {
 		// @ts-ignore
 		CATEGORIES = data.info_products.categories;
@@ -129,19 +126,22 @@
 		total_results = PRODUCTS.length;
 		products_showing = getProductsByPage(currentPage);
 		TOTAL_PAGES = Math.ceil(PRODUCTS.length / PRODUCTS_PER_PAGE);
-		paginator = generateVisiblePages()
+		paginator = generateVisiblePages();
 	});
 
 	// @ts-ignore
 	function filterByCategory(category) {
+		console.log(category);
 		if (category === 'todas') {
 			// @ts-ignore
-			PRODUCTS = data.info_products.services;
+			products_showing = data.info_products.services;
+			total_results = PRODUCTS.length;
 		} else {
 			// @ts-ignore
-			PRODUCTS = data.info_products.services.filter(
+			products_showing = data.info_products.services.filter(
 				(/** @type {{ category: any; }} */ item) => item.category === category,
 			);
+			total_results = products_showing.length;
 		}
 	}
 	// @ts-ignore
@@ -220,11 +220,15 @@
 								<div class="widget-content">
 									<!-- svelte-ignore a11y-invalid-attribute -->
 									<ul class="tags-list clearfix">
-										<li><a href="#" on:click={() => filterByCategory('todas')}>Todas</a></li>
+										<li>
+											<a href="#filter_input" on:click={() => filterByCategory('todas')}>Todas</a>
+										</li>
 										{#each CATEGORIES as CATEGORY}
 											<li>
-												<a href="#filter_input" class="capitalize" on:click={() => filterByCategory(CATEGORY)}
-													>{CATEGORY}</a
+												<a
+													href="#filter_input"
+													class="capitalize"
+													on:click={() => filterByCategory(CATEGORY)}>{CATEGORY}</a
 												>
 											</li>
 										{/each}
@@ -257,9 +261,11 @@
 									style="height: 260px; object-fit: cover;"
 								/>
 							</div>
-							<div class="category">
-								<span class="badge uppercase">{item.category}</span>
-							</div>
+							{#if item.category}
+								<div class="category">
+									<span class="badge uppercase">{item.category}</span>
+								</div>
+							{/if}
 							<h3>{item.name}</h3>
 							<h4 class="mb-5 text-sm text-white">{item.description ? item.description : ''}</h4>
 							<a
