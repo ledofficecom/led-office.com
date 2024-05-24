@@ -137,9 +137,10 @@
 		console.log(category);
 		if (category === 'todas') {
 			// @ts-ignore
-			products_showing = data.info_products.services;
+			products_showing = getProductsByPage(currentPage);
 			total_results = PRODUCTS.length;
 			show_paginator = true;
+
 		} else {
 			// @ts-ignore
 			products_showing = data.info_products.services.filter(
