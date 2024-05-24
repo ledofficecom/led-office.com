@@ -42,6 +42,9 @@
 
 	let products_showing = getProductsByPage(currentPage);
 	let show_paginator = true;
+	/**
+	 * @type {any[]}
+	 */
 	let paginator = [];
 	let total_results = 16;
 
