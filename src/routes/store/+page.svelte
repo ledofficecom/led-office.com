@@ -213,6 +213,7 @@
 													<small class="text-white"
 														>Mostrando <b>{total_results}</b> resultados</small
 													>
+													<a class="text-white underline text-sm" href="#filter_input">ir</a>
 												</div>
 											</div>
 										</div>
