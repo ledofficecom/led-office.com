@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Seo from "$lib/components/SEO.svelte";
-
+	import Seo from '$lib/components/SEO.svelte';
 </script>
-<Seo URL='/' TITLE="Inicio" DESCRIPTION="Página de inicio Led Office" />
-<section id="home" class="home-bg h-[120vh] bg-[#020B2C] relative">
-	<img src="/assets/images/banner.png" class="absolute w-full bottom-0" alt="banner">
+
+<Seo URL="/" TITLE="Inicio" DESCRIPTION="Página de inicio Led Office" />
+<section id="home" class="home-bg relative h-[120vh] bg-[#020B2C]">
+	<img src="/assets/images/banner.png" class="absolute bottom-0 w-full" alt="banner" />
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-sm-12 col-md-12 col-lg-6">
@@ -87,6 +87,32 @@
 </section>
 <!-- end section #about -->
 <!-- END ABOUT SECTION -->
+
+<section class="about-bg">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-12">
+				<div class="content-main text-left">
+					<div class="content-top text-center">
+						<h2>Productos destacados</h2>
+					</div>
+				</div>
+				<div class="flex justify-center">
+					<iframe
+					class="w-full h-[300px] max-w-[600px]"
+					
+					src="https://www.youtube.com/embed/vyGt7ldKUc8?si=wDBI0P_orUBVfZUx"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+				></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 <!-- BEGIN SYMPTOMS SECTION -->
 <section id="symptoms" class="symptoms-bg">
