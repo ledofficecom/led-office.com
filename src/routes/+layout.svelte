@@ -11,6 +11,10 @@
 			isMobile = true;
 		}
 	});
+
+	function tottleCollapsibleNavbar() {
+		document.getElementById('collapsibleNavbarx').classList.toggle('collapse');
+	}
 </script>
 
 <ButtonWhatsApp />
@@ -45,7 +49,7 @@
 				<ul class="navbar-nav nav mx-auto" id="navbar">
 					{#each MENU as item}
 						<li class="nav-item ml-lg-4">
-							<a class="nav-link" id="hover-nav-menu" href={item.path}>{item.name}</a>
+							<a class="nav-link" id="hover-nav-menu" on:click={tottleCollapsibleNavbar} href={item.path}>{item.name}</a>
 						</li>
 					{/each}
 				</ul>
