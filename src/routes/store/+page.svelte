@@ -139,12 +139,14 @@
 			// @ts-ignore
 			products_showing = data.info_products.services;
 			total_results = PRODUCTS.length;
+			show_paginator = true;
 		} else {
 			// @ts-ignore
 			products_showing = data.info_products.services.filter(
 				(/** @type {{ category: any; }} */ item) => item.category === category,
 			);
 			total_results = products_showing.length;
+			show_paginator = false;
 		}
 	}
 	// @ts-ignore
