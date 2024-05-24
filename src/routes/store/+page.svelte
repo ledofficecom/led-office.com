@@ -223,7 +223,7 @@
 										<li><a href="#" on:click={() => filterByCategory('todas')}>Todas</a></li>
 										{#each CATEGORIES as CATEGORY}
 											<li>
-												<a href="#" class="capitalize" on:click={() => filterByCategory(CATEGORY)}
+												<a href="#filter_input" class="capitalize" on:click={() => filterByCategory(CATEGORY)}
 													>{CATEGORY}</a
 												>
 											</li>
