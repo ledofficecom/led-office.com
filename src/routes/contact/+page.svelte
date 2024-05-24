@@ -32,40 +32,61 @@
 				referrerpolicy="no-referrer-when-downgrade"
 			></iframe>
 		</div>
+
+
 		<section id="cta-area" class="cta-area-bg">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-sm-12 col-md-12 col-lg-12">
-						<div class="content-main cta-area-inner-bg mt-0 p-5 text-center">
-							<div class="content-top text-center">
-								<h2 class="mt-0">¿Tienes alguna inquietud?</h2>
-							</div>
-							<div class="content-bottom content-bottom-width text-center">
-								<section id="news-fseed" class="sidebar-page-container">
-									<div class="row justify-content-center">
-										<div class="col-lg-6">
-											<div class="sidebar">
-												<div class="sidebar-search">
-													<div class="widget-content search-form">
-														<form action="https://formspree.io/f/moqgbqyk" method="post">
-															<div class="form-group">
-																<input type="search" name="name" class="mb-3" placeholder="Nombre" />
-																<input type="search" name="phone" class="mb-3" placeholder="Teléfono" />
-																<input type="search" name="message" class="mb-3" placeholder="Mensaje" />
-															</div>
-															<button type="submit" class="home-btn outline-btn mr-sm-4 mr-md-4"> Enviar </button>
-														</form>
+			<section id="cta-area" class="cta-area-bg">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="content-main cta-area-inner-bg mt-0 p-5 text-center">
+								<div class="content-top text-center">
+									<h2 class="mt-0">¿Tienes alguna inquietud?</h2>
+								</div>
+								<div class="content-bottom content-bottom-width text-center">
+									<section id="news-fseed" class="sidebar-page-container">
+										<div class="row justify-content-center">
+											<div class="col-lg-6">
+												<div class="sidebar">
+													<div class="sidebar-search">
+														<div class="widget-content search-form">
+															<form action="https://formspree.io/f/moqgbqyk" method="post">
+																<div class="form-group">
+																	<input
+																		type="search"
+																		name="name"
+																		class="mb-3"
+																		placeholder="Nombre"
+																	/>
+																	<input
+																		type="search"
+																		name="phone"
+																		class="mb-3"
+																		placeholder="Teléfono"
+																	/>
+																	<input
+																		type="search"
+																		name="message"
+																		class="mb-3"
+																		placeholder="Mensaje"
+																	/>
+																</div>
+																<button type="submit" class="home-btn outline-btn mr-sm-4 mr-md-4">
+																	Enviar
+																</button>
+															</form>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</section>
+									</section>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 		</section>
 	</div>
 </section>
